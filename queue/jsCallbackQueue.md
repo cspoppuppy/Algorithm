@@ -1,6 +1,6 @@
 # JS Asynchromous Callback Queue
 
-![callback queue](../docs/event-loop.png)
+![callback queue](/docs/event-loop.png)
 
 Example:
 
