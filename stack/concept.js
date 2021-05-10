@@ -1,3 +1,5 @@
+// no stack in JavaScript
+// use array instead
 const stack = [];
 stack.push(1);
 stack.push(2);

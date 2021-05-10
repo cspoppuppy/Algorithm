@@ -1,3 +1,5 @@
+// no queue in JavaScript
+// Use array instead
 const queue = [];
 queue.push(1);
 queue.push(2);
