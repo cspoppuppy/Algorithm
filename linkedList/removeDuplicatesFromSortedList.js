@@ -1,4 +1,4 @@
-// leetcode #206
+// leetcode #83
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 /**
@@ -12,15 +12,14 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var reverseList = function (head) {
-	let p1 = head;
-	let p2 = null;
-	while (p1) {
-		console.log(p1.val, p2 && p2.val);
-		const tmp = p1.next;
-		p1.next = p2;
-		p2 = p1;
-		p1 = tmp;
+var deleteDuplicates = function (head) {
+	let p = head;
+	while (p && p.next) {
+		if (p.val === p.next.val) {
+			p.next = p.next.next;
+		} else {
+			p = p.next;
+		}
 	}
-	return p2;
+	return head;
 };

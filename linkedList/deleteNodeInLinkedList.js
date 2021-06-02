@@ -1,4 +1,6 @@
-// leetcode 237
+// leetcode #237
+// Time Complexity: O(1)
+// Space Complexity: O(1)
 // replace knowing node with next node content, then remove next node
 /**
  * Definition for singly-linked list.
