@@ -8,7 +8,7 @@
 
 -   Set: no order, unique
 
--   Dictionary
+-   Map (Dictionary)
 
 -   Tree
 
