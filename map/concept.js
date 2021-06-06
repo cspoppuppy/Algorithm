@@ -27,10 +27,12 @@ for (const [item, val] of m.entries()) {
 	console.log('map key value pair:', item, val);
 }
 
+console.log('map keys to array: ', [...m.keys()]);
 for (let item of m.keys()) {
 	console.log('map key: ', item);
 }
 
+console.log('map values to array: ', [...m.values()]);
 for (let val of m.values()) {
 	console.log('map value: ', val);
 }
