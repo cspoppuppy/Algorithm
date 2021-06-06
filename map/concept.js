@@ -20,3 +20,17 @@ console.log(m);
 // in map
 console.log('map has a: ', m.has('a'));
 console.log('map has b: ', m.has('b'));
+
+// loop map
+console.log(m);
+for (const [item, val] of m.entries()) {
+	console.log('map key value pair:', item, val);
+}
+
+for (let item of m.keys()) {
+	console.log('map key: ', item);
+}
+
+for (let val of m.values()) {
+	console.log('map value: ', val);
+}
