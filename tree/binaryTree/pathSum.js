@@ -1,6 +1,6 @@
 // leetcode #94
 // Time Complexity: O(n)
-// Space Complexity: O(n)
+// Space Complexity: O(logN) - O(n)
 
 /**
  * Definition for a binary tree node.
@@ -19,12 +19,14 @@
 // Depth first
 var hasPathSum = function (root, targetSum) {
 	if (!root) return false;
-
+	let res = false;
 	const dfs = (node, sum) => {
 		sum += node.val;
 		console.log(node.val, sum);
+		if (!node.left && !node.right && sum === targetSum) res = true;
 		if (node.left) dfs(node.left, sum);
 		if (node.right) dfs(node.right, sum);
 	};
 	dfs(root, 0);
+	return res;
 };
